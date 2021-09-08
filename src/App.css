@@ -1,5 +1,7 @@
 .App {
   text-align: center;
+  width:100vw;
+  height:100vh;
 }
 
 .App-logo {
@@ -22,10 +24,50 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+  
 }
 
 .App-link {
   color: #61dafb;
+}
+
+.container {
+  
+  display: flex;
+  flex-direction:column;
+}
+
+.container  {
+  
+  padding-left: 30px;
+  padding-right: 30px;
+  
+}
+
+.container .sub {
+  background-color: blanchedalmond;
+  display: flex;
+  flex-direction:row;
+  
+  
+}
+
+.container .sub .title{
+  flex: 4;
+  align-items: center;
+}
+.container .sub .content{
+  flex: 8;
+  align-items: center;
+}
+.container .sub .content .input{
+  height:30px;
+  font-size: calc(10px + 2vmin);
+}
+
+.container .sub-button {
+  height:50px;
+  font-size: calc(10px + 2vmin);
 }
 
 @keyframes App-logo-spin {

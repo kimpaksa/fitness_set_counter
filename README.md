@@ -1,70 +1,31 @@
-# Getting Started with Create React App
+# 운동 카운터 웹 앱
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+React Hook을 활용해 간단한 운동 카운터 앱을 만들었습니다.\
+세트 지정, 세트 운동 후 휴식시간을 정할 수 있습니다.
 
-## Available Scripts
+## 설치방법
+1. npm install
+2. npm run build
+3. build 폴더 내부에 있는 파일들을 웹서버에 붙여 넣기
+4. 해당 웹서버에서 확인.
 
-In the project directory, you can run:
+## 사용방법
+1. 원하는 세트수를 입력합니다.
+  (ex: 10세트 하려면 10이라고 입력)
+2. 세트 종료 후 얼마나 쉴건지를 정합니다.(초단위)
+  (ex: 1세트 끝나고 60초 쉬려면 60이라고 입력)
+3. 시작을 누르면 0set이라고 표시됩니다.
+4. 1세트 운동을 마쳤다면 화면을 터치합니다. 그러면 0set->1set로 변경이 되며 정한 시간대로 휴식합니다.
+5. 휴식이 끝나기 3초전 카운트다운을 알리는 Sound가 나옵니다.
+6. 0초가 되었을때 시작되는 Sound가 나옵니다.
+7. 이렇게 정해진 세트동안 반복합니다.
+8. 완료되면, 완료되었다는 alert 표시 후 메인 설정 화면으로 이동됩니다.
 
-### `npm start`
+## 왜만들었나?
+요즘 살이 많이쪄서 다이어트 하려고 운동하는데 \
+세트 운동할때 카운트를 외우고 있어야 하는게 불편해서 \
+맛폰을 통해 몇세트 했는지 알 수 있는 앱을 만드는게 좋을 것 같아\
+제작하게 되었음.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## to-do
+1. [사용방법 -> 4번]에서 0set->1set로 바뀔때, 버튼이 눌리지 않도록 수정
