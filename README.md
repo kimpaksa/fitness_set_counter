@@ -3,6 +3,8 @@
 React Hook을 활용해 간단한 운동 카운터 앱을 만들었습니다.\
 세트 지정, 세트 운동 후 휴식시간을 정할 수 있습니다.
 
+https://kimpaksa.github.io/fitness_set_counter_page/
+
 ## 설치방법
 1. npm install
 2. npm run build
